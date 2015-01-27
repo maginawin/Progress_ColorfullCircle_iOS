@@ -8,7 +8,7 @@
 
 #import "ColorfullCircleProgress.h"
 
-#define CIRCLE_WIDTH 2.2
+#define CIRCLE_WIDTH 2.8
 
 @interface ColorfullCircleProgress()
 
@@ -57,7 +57,7 @@
     _circleLayer.zPosition = 2;
     // 绘制一个贝塞尔曲线
     UIBezierPath* path = [[UIBezierPath alloc] init];
-    [path addArcWithCenter:CGPointMake(70, 70) radius:66 startAngle:-M_PI_2 endAngle:3 * M_PI_2 clockwise:NO];
+    [path addArcWithCenter:CGPointMake(70, 70) radius:65.6 startAngle:-M_PI_2 endAngle:3 * M_PI_2 clockwise:NO];
     _circleLayer.path = path.CGPath;
     [self.layer addSublayer:_circleLayer];
 }
@@ -80,7 +80,7 @@
 
 - (UIBezierPath*)getBezierPathFromProgress:(CGFloat)value {
     UIBezierPath* path = [[UIBezierPath alloc] init];
-    [path addArcWithCenter:CGPointMake(70, 70) radius:66 startAngle:3 * M_PI_2 endAngle:(4 * value - 1) * M_PI_2 clockwise:NO];
+    [path addArcWithCenter:CGPointMake(70, 70) radius:65.6 startAngle:3 * M_PI_2 endAngle:(4 * value - 1) * M_PI_2 clockwise:NO];
     return path;
 }
 
