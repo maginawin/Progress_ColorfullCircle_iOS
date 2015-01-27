@@ -14,6 +14,7 @@
 		08EAD11C1A771FDF00844328 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08EAD11B1A771FDF00844328 /* Images.xcassets */; };
 		08EAD11F1A771FDF00844328 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EAD11D1A771FDF00844328 /* LaunchScreen.xib */; };
 		08EAD12B1A771FDF00844328 /* Progress_ColorfullCircleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD12A1A771FDF00844328 /* Progress_ColorfullCircleTests.m */; };
+		08EAD1741A773C0000844328 /* ColorfullCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD1731A773C0000844328 /* ColorfullCircleProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		08EAD1241A771FDF00844328 /* Progress_ColorfullCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Progress_ColorfullCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EAD1291A771FDF00844328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08EAD12A1A771FDF00844328 /* Progress_ColorfullCircleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Progress_ColorfullCircleTests.m; sourceTree = "<group>"; };
+		08EAD1721A773C0000844328 /* ColorfullCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfullCircleProgress.h; sourceTree = "<group>"; };
+		08EAD1731A773C0000844328 /* ColorfullCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfullCircleProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		08EAD10D1A771FDF00844328 /* Progress_ColorfullCircle */ = {
 			isa = PBXGroup;
 			children = (
+				08EAD16C1A77266D00844328 /* mView */,
+				08EAD1661A7722AF00844328 /* tools */,
 				08EAD1121A771FDF00844328 /* AppDelegate.h */,
 				08EAD1131A771FDF00844328 /* AppDelegate.m */,
 				08EAD1151A771FDF00844328 /* ViewController.h */,
@@ -117,6 +122,22 @@
 				08EAD1291A771FDF00844328 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08EAD1661A7722AF00844328 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		08EAD16C1A77266D00844328 /* mView */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD1721A773C0000844328 /* ColorfullCircleProgress.h */,
+				08EAD1731A773C0000844328 /* ColorfullCircleProgress.m */,
+			);
+			name = mView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08EAD1171A771FDF00844328 /* ViewController.m in Sources */,
+				08EAD1741A773C0000844328 /* ColorfullCircleProgress.m in Sources */,
 				08EAD1141A771FDF00844328 /* AppDelegate.m in Sources */,
 				08EAD1111A771FDF00844328 /* main.m in Sources */,
 			);

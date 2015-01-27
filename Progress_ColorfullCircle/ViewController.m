@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "ColorfullCircleProgress.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet ColorfullCircleProgress *progressView;
+@property (nonatomic) CGFloat progressValue;
 
 @end
 
@@ -16,12 +20,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _progressValue = 0.0;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - IBAction
+
+- (IBAction)add:(id)sender {
+    _progressValue += 0.01;
+    [_progressView setProgress:_progressValue];
+}
+
+- (IBAction)minus:(id)sender {
+    _progressValue -= 0.01;
+    [_progressView setProgress:_progressValue];
 }
 
 @end
