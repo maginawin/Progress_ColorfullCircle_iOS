@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08EAD1111A771FDF00844328 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD1101A771FDF00844328 /* main.m */; };
+		08EAD1141A771FDF00844328 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD1131A771FDF00844328 /* AppDelegate.m */; };
+		08EAD1171A771FDF00844328 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD1161A771FDF00844328 /* ViewController.m */; };
+		08EAD11A1A771FDF00844328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08EAD1181A771FDF00844328 /* Main.storyboard */; };
+		08EAD11C1A771FDF00844328 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08EAD11B1A771FDF00844328 /* Images.xcassets */; };
+		08EAD11F1A771FDF00844328 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EAD11D1A771FDF00844328 /* LaunchScreen.xib */; };
+		08EAD12B1A771FDF00844328 /* Progress_ColorfullCircleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD12A1A771FDF00844328 /* Progress_ColorfullCircleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08EAD1251A771FDF00844328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08EAD1031A771FDF00844328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08EAD10A1A771FDF00844328;
+			remoteInfo = Progress_ColorfullCircle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08EAD10B1A771FDF00844328 /* Progress_ColorfullCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Progress_ColorfullCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08EAD10F1A771FDF00844328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08EAD1101A771FDF00844328 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08EAD1121A771FDF00844328 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08EAD1131A771FDF00844328 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08EAD1151A771FDF00844328 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		08EAD1161A771FDF00844328 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08EAD1191A771FDF00844328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08EAD11B1A771FDF00844328 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		08EAD11E1A771FDF00844328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		08EAD1241A771FDF00844328 /* Progress_ColorfullCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Progress_ColorfullCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08EAD1291A771FDF00844328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08EAD12A1A771FDF00844328 /* Progress_ColorfullCircleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Progress_ColorfullCircleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08EAD1081A771FDF00844328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08EAD1211A771FDF00844328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08EAD1021A771FDF00844328 = {
+			isa = PBXGroup;
+			children = (
+				08EAD10D1A771FDF00844328 /* Progress_ColorfullCircle */,
+				08EAD1271A771FDF00844328 /* Progress_ColorfullCircleTests */,
+				08EAD10C1A771FDF00844328 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08EAD10C1A771FDF00844328 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD10B1A771FDF00844328 /* Progress_ColorfullCircle.app */,
+				08EAD1241A771FDF00844328 /* Progress_ColorfullCircleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08EAD10D1A771FDF00844328 /* Progress_ColorfullCircle */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD1121A771FDF00844328 /* AppDelegate.h */,
+				08EAD1131A771FDF00844328 /* AppDelegate.m */,
+				08EAD1151A771FDF00844328 /* ViewController.h */,
+				08EAD1161A771FDF00844328 /* ViewController.m */,
+				08EAD1181A771FDF00844328 /* Main.storyboard */,
+				08EAD11B1A771FDF00844328 /* Images.xcassets */,
+				08EAD11D1A771FDF00844328 /* LaunchScreen.xib */,
+				08EAD10E1A771FDF00844328 /* Supporting Files */,
+			);
+			path = Progress_ColorfullCircle;
+			sourceTree = "<group>";
+		};
+		08EAD10E1A771FDF00844328 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD10F1A771FDF00844328 /* Info.plist */,
+				08EAD1101A771FDF00844328 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08EAD1271A771FDF00844328 /* Progress_ColorfullCircleTests */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD12A1A771FDF00844328 /* Progress_ColorfullCircleTests.m */,
+				08EAD1281A771FDF00844328 /* Supporting Files */,
+			);
+			path = Progress_ColorfullCircleTests;
+			sourceTree = "<group>";
+		};
+		08EAD1281A771FDF00844328 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD1291A771FDF00844328 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08EAD10A1A771FDF00844328 /* Progress_ColorfullCircle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08EAD12E1A771FDF00844328 /* Build configuration list for PBXNativeTarget "Progress_ColorfullCircle" */;
+			buildPhases = (
+				08EAD1071A771FDF00844328 /* Sources */,
+				08EAD1081A771FDF00844328 /* Frameworks */,
+				08EAD1091A771FDF00844328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Progress_ColorfullCircle;
+			productName = Progress_ColorfullCircle;
+			productReference = 08EAD10B1A771FDF00844328 /* Progress_ColorfullCircle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08EAD1231A771FDF00844328 /* Progress_ColorfullCircleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08EAD1311A771FDF00844328 /* Build configuration list for PBXNativeTarget "Progress_ColorfullCircleTests" */;
+			buildPhases = (
+				08EAD1201A771FDF00844328 /* Sources */,
+				08EAD1211A771FDF00844328 /* Frameworks */,
+				08EAD1221A771FDF00844328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08EAD1261A771FDF00844328 /* PBXTargetDependency */,
+			);
+			name = Progress_ColorfullCircleTests;
+			productName = Progress_ColorfullCircleTests;
+			productReference = 08EAD1241A771FDF00844328 /* Progress_ColorfullCircleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08EAD1031A771FDF00844328 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = mycj.wwd;
+				TargetAttributes = {
+					08EAD10A1A771FDF00844328 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					08EAD1231A771FDF00844328 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 08EAD10A1A771FDF00844328;
+					};
+				};
+			};
+			buildConfigurationList = 08EAD1061A771FDF00844328 /* Build configuration list for PBXProject "Progress_ColorfullCircle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08EAD1021A771FDF00844328;
+			productRefGroup = 08EAD10C1A771FDF00844328 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08EAD10A1A771FDF00844328 /* Progress_ColorfullCircle */,
+				08EAD1231A771FDF00844328 /* Progress_ColorfullCircleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08EAD1091A771FDF00844328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08EAD11A1A771FDF00844328 /* Main.storyboard in Resources */,
+				08EAD11F1A771FDF00844328 /* LaunchScreen.xib in Resources */,
+				08EAD11C1A771FDF00844328 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08EAD1221A771FDF00844328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08EAD1071A771FDF00844328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08EAD1171A771FDF00844328 /* ViewController.m in Sources */,
+				08EAD1141A771FDF00844328 /* AppDelegate.m in Sources */,
+				08EAD1111A771FDF00844328 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08EAD1201A771FDF00844328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08EAD12B1A771FDF00844328 /* Progress_ColorfullCircleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08EAD1261A771FDF00844328 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08EAD10A1A771FDF00844328 /* Progress_ColorfullCircle */;
+			targetProxy = 08EAD1251A771FDF00844328 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08EAD1181A771FDF00844328 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08EAD1191A771FDF00844328 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08EAD11D1A771FDF00844328 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08EAD11E1A771FDF00844328 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08EAD12C1A771FDF00844328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08EAD12D1A771FDF00844328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08EAD12F1A771FDF00844328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Progress_ColorfullCircle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08EAD1301A771FDF00844328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Progress_ColorfullCircle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08EAD1321A771FDF00844328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Progress_ColorfullCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Progress_ColorfullCircle.app/Progress_ColorfullCircle";
+			};
+			name = Debug;
+		};
+		08EAD1331A771FDF00844328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Progress_ColorfullCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Progress_ColorfullCircle.app/Progress_ColorfullCircle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08EAD1061A771FDF00844328 /* Build configuration list for PBXProject "Progress_ColorfullCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08EAD12C1A771FDF00844328 /* Debug */,
+				08EAD12D1A771FDF00844328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08EAD12E1A771FDF00844328 /* Build configuration list for PBXNativeTarget "Progress_ColorfullCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08EAD12F1A771FDF00844328 /* Debug */,
+				08EAD1301A771FDF00844328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08EAD1311A771FDF00844328 /* Build configuration list for PBXNativeTarget "Progress_ColorfullCircleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08EAD1321A771FDF00844328 /* Debug */,
+				08EAD1331A771FDF00844328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08EAD1031A771FDF00844328 /* Project object */;
+}
