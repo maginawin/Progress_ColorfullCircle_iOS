@@ -9,6 +9,7 @@
 #import "ColorfullCircleProgress.h"
 
 #define CIRCLE_WIDTH 2.8
+#define DEGREES_TO_RADIANS(angle) ((angle) / 180 * M_PI)
 
 @interface ColorfullCircleProgress()
 
@@ -24,7 +25,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setColorImage:[UIImage imageNamed:@"color"]];
-        [self setFrontImageWithColor:[UIColor whiteColor]];
+        [self setFrontImageWithColor:[UIColor colorWithRed:210/255.0 green:210/255.0 blue:210/255.0 alpha:1.0]];
 //        [self setProgress:0.5];
     }
     return self;
@@ -34,7 +35,8 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self setColorImage:[UIImage imageNamed:@"color"]];
-        [self setFrontImageWithColor:[UIColor whiteColor]];
+        [self setFrontImageWithColor:[UIColor colorWithRed:249/255.0 green:133/255.0 blue:8/255.0 alpha:1.0]];
+//        [self setFrontImageWithColor:[UIColor clearColor]];
     }
     return self;
 }
@@ -43,6 +45,7 @@
 - (void)setColorImage:(UIImage*)colorImage {
     UIImageView* imageView = [[UIImageView alloc] initWithFrame:self.bounds];
     imageView.image = colorImage;
+    imageView.layer.zPosition = -1;
     [self addSubview:imageView];
 }
 
@@ -54,12 +57,16 @@
     _circleLayer.lineWidth = CIRCLE_WIDTH;
 //    _circleLayer.lineJoin = kCALineJoinRound; // 连接样式
 //    _circleLayer.lineCap = kCALineCapRound; // 头的样式
-    _circleLayer.zPosition = 2;
+    _circleLayer.zPosition = 1;
     // 绘制一个贝塞尔曲线
     UIBezierPath* path = [[UIBezierPath alloc] init];
-    [path addArcWithCenter:CGPointMake(70, 70) radius:65.6 startAngle:-M_PI_2 endAngle:3 * M_PI_2 clockwise:NO];
+    [path addArcWithCenter:CGPointMake(70, 70) radius:65.6 startAngle:DEGREES_TO_RADIANS(270.00) endAngle:DEGREES_TO_RADIANS(270.01) clockwise:NO];
     _circleLayer.path = path.CGPath;
+    _circleLayer.strokeStart = 0.0f;
+    _circleLayer.strokeEnd = 1.0f;
     [self.layer addSublayer:_circleLayer];
+    _current = 0.0f;
+    [self setProgress:0.0f];
 }
 
 - (void)setProgress:(CGFloat)value {
@@ -69,19 +76,16 @@
     } else if (value > 1) {
         value = 1.0f;
     }
-
-    CATransition* transition = [CATransition animation];
-    transition.duration = 0.5f;
-    transition.type = kCATransitionFade;
-    [_circleLayer addAnimation:transition forKey:@"animation"];
-//    _circleLayer.path = nil;
-    _circleLayer.path = [self getBezierPathFromProgress:value].CGPath;
-}
-
-- (UIBezierPath*)getBezierPathFromProgress:(CGFloat)value {
-    UIBezierPath* path = [[UIBezierPath alloc] init];
-    [path addArcWithCenter:CGPointMake(70, 70) radius:65.6 startAngle:3 * M_PI_2 endAngle:(4 * value - 1) * M_PI_2 clockwise:NO];
-    return path;
+    
+    // Add animation
+    CABasicAnimation* pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    pathAnimation.duration = 1.0f;
+    pathAnimation.fromValue = @((1.0 - _current) / 1.0);
+    _current = value;
+    pathAnimation.toValue = @((1.0 - _current) / 1.0);
+    pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    _circleLayer.strokeEnd = (1.0 - _current) / 1.0;
+    [_circleLayer addAnimation:pathAnimation forKey:@"strokeEnd"];
 }
 
 @end

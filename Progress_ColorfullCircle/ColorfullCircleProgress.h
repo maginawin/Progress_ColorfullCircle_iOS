@@ -13,10 +13,11 @@
 //      @1x: 140*140 132 2
 
 @interface ColorfullCircleProgress : UIView
-
 /*
  * 设置进度条的值, 范围在 0.0 ~ 1.0
  */
 - (void)setProgress:(CGFloat)value;
+
+@property (nonatomic) CGFloat current;
 
 @end

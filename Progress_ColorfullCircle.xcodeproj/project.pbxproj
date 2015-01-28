@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0803F8911A78C34F0069A51F /* ColorfullCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0803F88F1A78C34F0069A51F /* ColorfullCircleProgress.m */; };
 		08EAD1111A771FDF00844328 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD1101A771FDF00844328 /* main.m */; };
 		08EAD1141A771FDF00844328 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD1131A771FDF00844328 /* AppDelegate.m */; };
 		08EAD1171A771FDF00844328 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD1161A771FDF00844328 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		08EAD11C1A771FDF00844328 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08EAD11B1A771FDF00844328 /* Images.xcassets */; };
 		08EAD11F1A771FDF00844328 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EAD11D1A771FDF00844328 /* LaunchScreen.xib */; };
 		08EAD12B1A771FDF00844328 /* Progress_ColorfullCircleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD12A1A771FDF00844328 /* Progress_ColorfullCircleTests.m */; };
-		08EAD1741A773C0000844328 /* ColorfullCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD1731A773C0000844328 /* ColorfullCircleProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0803F88F1A78C34F0069A51F /* ColorfullCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfullCircleProgress.m; sourceTree = "<group>"; };
+		0803F8901A78C34F0069A51F /* ColorfullCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfullCircleProgress.h; sourceTree = "<group>"; };
 		08EAD10B1A771FDF00844328 /* Progress_ColorfullCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Progress_ColorfullCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EAD10F1A771FDF00844328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08EAD1101A771FDF00844328 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +43,6 @@
 		08EAD1241A771FDF00844328 /* Progress_ColorfullCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Progress_ColorfullCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EAD1291A771FDF00844328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08EAD12A1A771FDF00844328 /* Progress_ColorfullCircleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Progress_ColorfullCircleTests.m; sourceTree = "<group>"; };
-		08EAD1721A773C0000844328 /* ColorfullCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfullCircleProgress.h; sourceTree = "<group>"; };
-		08EAD1731A773C0000844328 /* ColorfullCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfullCircleProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 		08EAD16C1A77266D00844328 /* mView */ = {
 			isa = PBXGroup;
 			children = (
-				08EAD1721A773C0000844328 /* ColorfullCircleProgress.h */,
-				08EAD1731A773C0000844328 /* ColorfullCircleProgress.m */,
+				0803F8901A78C34F0069A51F /* ColorfullCircleProgress.h */,
+				0803F88F1A78C34F0069A51F /* ColorfullCircleProgress.m */,
 			);
 			name = mView;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08EAD1171A771FDF00844328 /* ViewController.m in Sources */,
-				08EAD1741A773C0000844328 /* ColorfullCircleProgress.m in Sources */,
+				0803F8911A78C34F0069A51F /* ColorfullCircleProgress.m in Sources */,
 				08EAD1141A771FDF00844328 /* AppDelegate.m in Sources */,
 				08EAD1111A771FDF00844328 /* main.m in Sources */,
 			);
@@ -366,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Progress_ColorfullCircle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -376,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Progress_ColorfullCircle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -434,6 +436,7 @@
 				08EAD1301A771FDF00844328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08EAD1311A771FDF00844328 /* Build configuration list for PBXNativeTarget "Progress_ColorfullCircleTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +445,7 @@
 				08EAD1331A771FDF00844328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
